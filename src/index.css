@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-gold: #a67c52;
+  --color-gold-hover: #8e6a45;
+  --radius-custom: 2.5rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #fcfcfc;
+    scroll-behavior: smooth;
+    color: #0f172a; /* slate-900 */
+  }
+}
+
+@layer utilities {
+  .rounded-custom {
+    border-radius: var(--radius-custom);
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@keyframes pulse-custom {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(166, 124, 82, 0.4); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(166, 124, 82, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(166, 124, 82, 0); }
+}
+
+.animate-pulse-custom {
+  animation: pulse-custom 2s infinite;
+}

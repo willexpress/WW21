@@ -1,0 +1,21 @@
+{
+  "name": "WW21 - Construção a Seco",
+  "short_name": "WW21",
+  "description": "Especialistas em montagem de drywall e forros decorativos em Brasília e Goiás.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfcfc",
+  "theme_color": "#a67c52",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/hLP9ep2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/hLP9ep2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

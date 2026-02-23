@@ -4,7 +4,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import WhatsAppButtonNew from './components/WhatsAppButtonNew';
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
       <Services />
       <Portfolio />
       <Footer />
-      <WhatsAppButton />
+      <WhatsAppButtonNew />
     </div>
   );
 }

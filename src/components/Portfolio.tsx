@@ -9,13 +9,6 @@ const portfolioItems = [
     image: 'https://i.imgur.com/3vxVUm6.png'
   },
   {
-    id: 2,
-    category: 'comercial',
-    title: 'Execução Comercial Ágil',
-    subtitle: 'Divisórias e Forros Industriais',
-    image: 'https://i.imgur.com/Rju8l14.png'
-  },
-  {
     id: 3,
     category: 'residencial',
     title: 'Design de Interiores',
@@ -23,18 +16,25 @@ const portfolioItems = [
     image: 'https://i.imgur.com/A5QEkD0.png'
   },
   {
-    id: 4,
-    category: 'comercial',
-    title: 'Estruturação de Ambientes',
-    subtitle: 'Soluções para Escritórios',
-    image: 'https://i.imgur.com/Oe1vsXS.png'
-  },
-  {
     id: 5,
     category: 'residencial',
     title: 'Detalhes em Drywall',
     subtitle: 'Qualidade Superior no DF e GO',
     image: 'https://i.imgur.com/Ebm6VAF.png'
+  },
+  {
+    id: 2,
+    category: 'comercial',
+    title: 'Execução Comercial Ágil',
+    subtitle: 'Divisórias e Forros Industriais',
+    image: 'https://i.imgur.com/Rju8l14.png'
+  },
+  {
+    id: 4,
+    category: 'comercial',
+    title: 'Estruturação de Ambientes',
+    subtitle: 'Soluções para Escritórios',
+    image: 'https://i.imgur.com/Oe1vsXS.png'
   }
 ];
 
@@ -108,7 +108,15 @@ export default function Portfolio() {
             </div>
             <div className="p-4">
               <h4 className="font-bold text-lg">{item.title}</h4>
-              <p className="text-xs text-slate-400 uppercase font-bold tracking-widest mt-1">{item.subtitle}</p>
+              <p className="text-xs text-slate-400 uppercase font-bold tracking-widest mt-1 mb-4">{item.subtitle}</p>
+              <a 
+                href="https://wa.link/tmnexz" 
+                target="_blank" 
+                className="inline-flex items-center space-x-2 text-sm font-bold text-gold hover:text-slate-900 transition-colors"
+              >
+                <i className="fab fa-whatsapp text-lg"></i>
+                <span>Solicitar Orçamento</span>
+              </a>
             </div>
           </div>
         ))}

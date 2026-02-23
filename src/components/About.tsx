@@ -8,7 +8,7 @@ export default function About() {
             Referência em Brasília e Goiás para quem busca perfeição em acabamentos a seco.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed mb-8">
-            A WW21 nasceu do desejo de trazer agilidade e limpeza para o estaleiro de obras sem abrir mão da estética. Atendemos projetos residenciais de alto padrão e grandes espaços comerciais com a mesma dedicação técnica.
+            Especializada em Drywall, forros e paredes, a WW21 oferece soluções modernas que unem agilidade e estética. Transformamos ambientes residenciais e comerciais com precisão técnica, garantindo obras limpas e acabamentos de alto padrão.
           </p>
           <a href="https://wa.link/tmnexz" target="_blank" className="bg-gold text-white px-8 py-3 rounded-full font-medium w-max hover:bg-white hover:text-slate-900 transition shadow-lg">Falar com Especialista</a>
         </div>

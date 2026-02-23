@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="col-span-2">
           <div className="flex items-center space-x-3 mb-6">
             <img src="https://i.imgur.com/hLP9ep2.png" alt="Logótipo WW21" className="h-10 w-auto object-contain" referrerPolicy="no-referrer" />
-            <div className="text-xl font-bold tracking-tight uppercase text-white">
+            <div className="text-xl font-bold tracking-tight uppercase text-gold">
               WW21 
               <span className="text-xs block font-normal text-slate-400 tracking-widest leading-none">Construção a Seco</span>
             </div>

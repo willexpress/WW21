@@ -24,10 +24,10 @@ export default function Hero() {
         {/* Card Estatísticas Flutuante */}
         <div className="absolute bottom-10 right-10 bg-white p-8 rounded-3xl shadow-2xl hidden lg:block w-80">
           <h3 className="font-bold text-lg mb-2 text-slate-900">WW21 Construção</h3>
-          <p className="text-slate-500 text-sm mb-6">Equipa treinada para montagem rápida e acabamento impecável em gesso acartonado.</p>
+          <p className="text-slate-500 text-sm mb-6">Equipe treinada para montagem rápida e acabamento impecável em gesso acartonado.</p>
           <div className="grid grid-cols-3 gap-4 border-t pt-6">
             <div>
-              <div className="font-bold text-xl text-slate-900">12y</div>
+              <div className="font-bold text-xl text-slate-900">12 Anos</div>
               <div className="text-[10px] text-slate-400 uppercase font-bold">Exp.</div>
             </div>
             <div>

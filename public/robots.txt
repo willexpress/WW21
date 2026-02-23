@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ww21.com.br/sitemap.xml

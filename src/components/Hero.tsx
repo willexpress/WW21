@@ -10,7 +10,7 @@ export default function Hero() {
           
         <div className="w-full md:w-2/3 text-white z-10">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
-            Mãos que Criam <br /> o seu Espaço
+            Drywall e Forros: <br /> Mãos que Criam o seu Espaço
           </h1>
           <p className="text-slate-100 text-lg md:text-xl mb-8 max-w-xl leading-relaxed drop-shadow-md">
             Especialistas em montagem de drywall e forros decorativos em Brasília e Goiás. Execução técnica de alta precisão para o seu projeto.

@@ -1,7 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,19 +33,30 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-[60] border-b border-slate-100">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <nav 
+        className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500 ease-in-out border-b border-transparent ${
+          scrolled 
+            ? 'bg-slate-900 py-3 shadow-lg' 
+            : 'bg-transparent py-6'
+        }`}
+      >
+        <div className="container mx-auto px-6 flex justify-between items-center">
           {/* Logo e Nome */}
           <div className="flex items-center space-x-3">
-            <img src="https://i.imgur.com/hLP9ep2.png" alt="Logótipo WW21" className="h-10 w-auto object-contain" referrerPolicy="no-referrer" />
-            <div className="text-xl font-bold tracking-tight uppercase">
+            <img 
+              src="https://i.imgur.com/hLP9ep2.png" 
+              alt="Logótipo WW21" 
+              className={`h-10 w-auto object-contain transition-all duration-300 ${scrolled ? 'brightness-0 invert' : ''}`} 
+              referrerPolicy="no-referrer" 
+            />
+            <div className={`text-xl font-bold tracking-tight uppercase transition-colors duration-300 ${scrolled ? 'text-white' : 'text-slate-900'}`}>
               WW21 
-              <span className="text-xs block font-normal text-slate-400 tracking-widest leading-none">Construção a Seco</span>
+              <span className={`text-xs block font-normal tracking-widest leading-none transition-colors duration-300 ${scrolled ? 'text-slate-300' : 'text-slate-500'}`}>Construção a Seco</span>
             </div>
           </div>
           
           {/* Menu Desktop */}
-          <div className="hidden md:flex space-x-10 text-sm font-medium text-slate-600">
+          <div className={`hidden md:flex space-x-10 text-sm font-medium transition-colors duration-300 ${scrolled ? 'text-white/90' : 'text-slate-600'}`}>
             <a href="#home" className="hover:text-gold transition">Início</a>
             <a href="#sobre" className="hover:text-gold transition">Sobre</a>
             <a href="#portfolio" className="hover:text-gold transition">Portfólio</a>
@@ -39,10 +64,10 @@ export default function Navbar() {
           </div>
 
           {/* Botão Orçamento Desktop */}
-          <a href="https://wa.link/tmnexz" target="_blank" className="hidden md:block bg-gold text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gold-hover transition">Orçamento</a>
+          <a href="https://wa.link/tmnexz" target="_blank" className="hidden md:block bg-gold text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gold-hover transition shadow-lg hover:shadow-gold/50">Orçamento</a>
 
           {/* Botão Burguer Mobile */}
-          <button onClick={toggleMenu} className="md:hidden text-2xl text-slate-800 focus:outline-none p-2">
+          <button onClick={toggleMenu} className={`md:hidden text-2xl focus:outline-none p-2 transition-colors duration-300 ${scrolled ? 'text-white' : 'text-slate-800'}`}>
             <i className="fas fa-bars"></i>
           </button>
         </div>

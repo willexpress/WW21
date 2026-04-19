@@ -5,10 +5,10 @@ export default function About() {
         <div className="w-full md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
           <h2 className="text-4xl font-bold text-white mb-6">Sobre <span className="text-gold">Nós</span></h2>
           <p className="text-slate-400 text-sm leading-relaxed mb-6 italic border-l-2 border-gold pl-4">
-            Referência em Brasília e Goiás para quem busca perfeição em acabamentos a seco.
+            A sua melhor escolha para projetos de Drywall e Forros em Brasília e região.
           </p>
           <p className="text-slate-400 text-sm leading-relaxed mb-8">
-            Especializada em Drywall, forros e paredes, a WW21 oferece soluções modernas que unem agilidade e estética. Transformamos ambientes residenciais e comerciais com precisão técnica, garantindo obras limpas e acabamentos de alto padrão.
+            Especializada na instalação de Forro Drywall em Brasília, gesso acartonado e paredes acústicas, a WW21 oferece soluções modernas que unem agilidade e estética. Transformamos ambientes com precisão técnica e acabamentos de altíssimo padrão.
           </p>
           <a href="https://wa.link/tmnexz" target="_blank" className="bg-gold text-white px-8 py-3 rounded-full font-medium w-max hover:bg-white hover:text-slate-900 transition shadow-lg">Falar com Especialista</a>
         </div>

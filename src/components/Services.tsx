@@ -3,10 +3,10 @@ export default function Services() {
     <section className="container mx-auto px-6 py-20">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12">
         <div>
-          <h2 className="text-4xl font-bold mb-2 text-slate-900">Transforme a sua <br /> <span className="text-gold">Visão em Realidade</span></h2>
+          <h2 className="text-4xl font-bold mb-2 text-slate-900">Transforme seu Ambiente com <br /> <span className="text-gold">Drywall em Brasília</span></h2>
         </div>
         <div className="max-w-md text-slate-500 text-sm leading-relaxed mt-4 md:mt-0">
-          Líderes em Brasília no setor de construção a seco. Garantimos que cada sanca e cada parede seja executada com a precisão que o seu projeto exige.
+          Líderes no setor de construção a seco e especialistas em Forro Drywall na capital federal. Garantimos que cada sanca e cada parede seja executada com precisão.
         </div>
       </div>
 

@@ -17,7 +17,7 @@ export default function Footer() {
             <img src="https://i.imgur.com/hLP9ep2.png" alt="Logótipo WW21" className="h-10 w-auto object-contain" referrerPolicy="no-referrer" />
             <div className="text-xl font-bold tracking-tight uppercase text-gold">
               WW21 
-              <span className="text-xs block font-normal text-slate-400 tracking-widest leading-none">Construção a Seco</span>
+              <span className="text-xs block font-normal text-slate-400 tracking-widest leading-none">Gesso Drywall Brasília</span>
             </div>
           </div>
           <p className="text-slate-400 max-w-sm leading-relaxed">Referência em gesso acartonado, drywall e projetos de forro decorativo em Brasília e entorno.</p>

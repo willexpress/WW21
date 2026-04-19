@@ -51,7 +51,7 @@ export default function Navbar() {
             />
             <div className={`text-xl font-bold tracking-tight uppercase transition-colors duration-300 ${scrolled ? 'text-white' : 'text-slate-900'}`}>
               WW21 
-              <span className={`text-xs block font-normal tracking-widest leading-none transition-colors duration-300 ${scrolled ? 'text-slate-300' : 'text-slate-500'}`}>Construção a Seco</span>
+              <span className={`text-xs block font-normal tracking-widest leading-none transition-colors duration-300 ${scrolled ? 'text-slate-300' : 'text-slate-500'}`}>Gesso Drywall Brasília</span>
             </div>
           </div>
           

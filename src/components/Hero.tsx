@@ -10,10 +10,10 @@ export default function Hero() {
           
         <div className="w-full md:w-2/3 text-white z-10">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
-            Drywall e Forros: <br /> Mãos que Criam o seu Espaço
+            Drywall em Brasília: <br /> Mãos que Criam o seu Espaço
           </h1>
           <p className="text-slate-100 text-lg md:text-xl mb-8 max-w-xl leading-relaxed drop-shadow-md">
-            Especialistas em montagem de drywall e forros decorativos em Brasília e Goiás. Execução técnica de alta precisão para o seu projeto.
+            Especialistas na instalação de Forro Drywall em Brasília e região. Execução técnica de alta precisão, rápida e limpa para o seu projeto residencial ou comercial.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#portfolio" className="bg-white text-slate-900 px-10 py-4 rounded-full font-bold hover:bg-gold hover:text-white transition-all shadow-lg">Ver Obras Realizadas</a>
